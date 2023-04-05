@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&display=swap" rel="stylesheet">
+  <title>Space tourism destination</title>
+  <style>
+    @layer components{
+      .font_family{
+        font-family: 'IBM Plex Serif', serif;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-[url('/starter-code/assets/destination/background-destination-desktop.jpg')] bg-no-repeat bg-cover h-[100%] w-[100%] select-none max-[926px]:bg-[url('/starter-code/assets/destination/background-destination-tablet.jpg')] max-[455px]:bg-[url('/starter-code/assets/destination/background-destination-mobile.jpg')]">
+
+  <nav class="flex justify-between w-[90%] m-auto  pt-[40px] relative font_family">
+    <a href="/starter-code/Home.html"><div class="logo bg-[url('/starter-code/assets/shared/logo.svg')] bg-no-repeat bg-cover w-[40px] h-[40px] mt-[20px]"></div></a>
+    <div class="line w-[400px] h-[1px] bg-slate-400  absolute top-[80px] left-[130px] max-[926px]:hidden"></div>
+
+    <ul class="flex justify-evenly w-[700px] h-[70px] text-[1.1rem] text-white items-center  bg-[#ffffff04] backdrop-blur-[10px] max-[926px]:hidden">
+      <a href="/starter-code//Home.html" class="home relative group"><li><span class="font-bold">00 </span>Home</li><div class="transition duration-100 ease-in-out delay-150 group-hover:w-[70px] h-[2px] absolute top-[46px] bg-slate-500"></div></a>
+      <a href="/starter-code/Destination.html" class="destination relative group underline decoration-2 underline-offset-[27px]"><li><span class="font-bold">01 </span> DESTINATION</li><div class="transition duration-300 ease-in-out delay-150 group-hover:w-[131px] h-[2px] absolute top-[46px] bg-slate-500"></div></a>
+      <a href="/starter-code/crew.html" class="crew relative group"><li><span class="font-bold">02 </span> CREW</li><div class="transition duration-300 ease-in-out delay-150 group-hover:w-[70px] h-[2px] absolute top-[46px] bg-slate-500"></div></a>
+      <a href="/starter-code/technology.html" class="technology relative group"><li><span class="font-bold">03 </span> TECHNOLOGY</li><div class="transition duration-300 ease-in-out delay-150 group-hover:w-[150px] h-[2px] absolute top-[46px] bg-slate-500"></div></a>
+    </ul>
+    <div class="burger absolute right-1  z-10 bg-[url('/starter-code/assets/shared/icon-hamburger.svg')] bg-no-repeat bg-cover cursor-pointer w-[30px] h-[30px] hidden max-[926px]:block"></div>
+    <div class="close bg-[url('/starter-code/assets/shared/icon-close.svg')] bg-no-repeat bg-cover w-[30px] h-[30px] hidden"></div>
+        
+        <ul class="list hidden  flex-col justify-evenly absolute right-0 w-[80%] h-[300px] text-[1.1rem] text-white items-center  bg-[#ffffff04] backdrop-blur-[10px] ">
+          <a href="/starter-code//Home.html" class="home relative group underline decoration-2 underline-offset-[27px]"><li><span class="font-bold">00 </span>Home</li><div class=" group-hover:w-[70px] h-[2px] absolute top-[46px] bg-slate-500"></div></a>
+          <a href="/starter-code/Destination.html" class="destination relative group"><li><span class="font-bold">01 </span> DESTINATION</li><div class=" group-hover:w-[131px] h-[2px] absolute top-[46px] bg-slate-500"></div></a>
+          <a href="/starter-code/crew.html" class="crew relative group"><li><span class="font-bold">02 </span> CREW</li><div class=" group-hover:w-[70px] h-[2px] absolute top-[46px] bg-slate-500"></div></a>
+          <a href="/starter-code/technology.html" class="technology relative group"><li><span class="font-bold">03 </span> TECHNOLOGY</li><div class=" group-hover:w-[150px] h-[2px] absolute top-[46px] bg-slate-500"></div></a>
+        </ul>
+  </nav>
+
+  <main class="flex flex-row justify-around font_family w-[90%] h-auto mt-[90px] mx-auto max-[926px]:flex-col max-[926px]:w-full max-[926px]:items-center">
+    <div class="image flex flex-col justify-between w-[40%] max-[926px]:w-[60%]">
+      <h1 class="text-white font-bold text-[2rem] mb-[50px] max-[926px]:text-center"><span class="text-gray-500 font-bold text-[2rem]">01</span> Pick Your Destination</h1>
+      <img class="animate-[spin_8s_ease_infinite]"  src="/starter-code/assets/destination/image-moon.png" alt="the moon">
+    </div>
+
+    <div class="info w-[30%] max-[926px]:w-[70%] max-[926px]:mt-[100px] max-[926px]:text-center">
+      <ul class="list_destination flex flex-row justify-between w-[300px] text-gray-500 font-bold text-[1rem] max-[926px]:m-auto">
+        <li class="moon hover:text-white hover:cursor-pointer underline decoration-[2px] underline-offset-[10px] text-white">MOON</li>
+        <li class="mars hover:text-white hover:cursor-pointer">MARS</li>
+        <li class="europa hover:text-white hover:cursor-pointer">EUROPA</li>
+        <li class="titan hover:text-white hover:cursor-pointer">TITAN</li>
+      </ul>
+      <h1 class="destinations_name text-white text-[7vw] font-medium">MOON</h1>
+      <p class="para_destinations text-gray-500 text-[1.2rem] font-bold">See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+        regain perspective and come back refreshed. While you’re there, take in some history 
+        by visiting the Luna 2 and Apollo 11 landing sites.</p>
+        <br>
+        <hr class="divide-slate-600">
+        <br>
+
+        <div class="text-white text-center flex flex-row justify-between ">
+          <div>
+            <h1 >Avg. distance</h1>
+            <p class="avg_destinations text-[1.5rem] font-bold">384,400 km</p>
+          </div>
+          <div>
+            <h1 > Est. travel time</h1>
+            <p class="est_travel text-[1.5rem] font-bold">3 days</p>
+          </div>
+        </div>
+    </div>
+  </main>
+  <script src="destination.js"></script>
+</body>
+</html>

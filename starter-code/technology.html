@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&display=swap" rel="stylesheet">
+  <title>Space Tourism | TECHNOLOGY</title>
+  <style>
+    @layer components{
+      .font_family{
+        font-family: 'IBM Plex Serif', serif;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-[url('/starter-code/assets/technology/background-technology-desktop.jpg')]  bg-cover w-full h-full font_family max-[455px]:bg-[url('/starter-code/assets/technology/background-technology-mobile.jpg')]">
+  <nav class="flex justify-between w-[90%] m-auto  pt-[40px] relative font_family">
+    <a href="/starter-code/Home.html"><div class="logo bg-[url('/starter-code/assets/shared/logo.svg')] bg-no-repeat bg-cover w-[40px] h-[40px] mt-[20px]"></div></a>
+    <div class="line w-[400px] h-[1px] bg-slate-400  absolute top-[80px] left-[130px]  max-[926px]:hidden"></div>
+
+    <ul class="flex justify-evenly w-[700px] h-[70px] text-[1.1rem] text-white items-center  bg-[#ffffff04] backdrop-blur-[10px] max-[926px]:hidden">
+      <a href="/starter-code//Home.html" class="home relative group"><li><span class="font-bold">00 </span>Home</li><div class=" group-hover:w-[70px] h-[2px] absolute top-[46px] bg-slate-500"></div></a>
+      <a href="/starter-code/Destination.html" class="destination relative group "><li><span class="font-bold">01 </span> DESTINATION</li><div class=" group-hover:w-[131px] h-[2px] absolute top-[46px] bg-slate-500"></div></a>
+      <a href="/starter-code/crew.html" class="crew relative group"><li><span class="font-bold">02 </span> CREW</li><div class=" group-hover:w-[70px] h-[2px] absolute top-[46px] bg-slate-500"></div></a>
+      <a href="/starter-code/technology.html" class="technology relative group underline decoration-2 underline-offset-[27px]"><li><span class="font-bold">03 </span> TECHNOLOGY</li><div class=" group-hover:w-[150px] h-[2px] absolute top-[46px] bg-slate-500"></div></a>
+    </ul>
+    <div class="burger absolute right-1  z-10 bg-[url('/starter-code/assets/shared/icon-hamburger.svg')] bg-no-repeat bg-cover cursor-pointer w-[30px] h-[30px] hidden max-[926px]:block"></div>
+    <div class="close bg-[url('/starter-code/assets/shared/icon-close.svg')] bg-no-repeat bg-cover w-[30px] h-[30px] hidden"></div>
+        
+        <ul class="list hidden  flex-col justify-evenly absolute right-0 w-[80%] h-[300px] text-[1.1rem] text-white items-center  bg-[#ffffff04] backdrop-blur-[10px] ">
+          <a href="/starter-code//Home.html" class="home relative group underline decoration-2 underline-offset-[27px]"><li><span class="font-bold">00 </span>Home</li><div class=" group-hover:w-[70px] h-[2px] absolute top-[46px] bg-slate-500"></div></a>
+          <a href="/starter-code/Destination.html" class="destination relative group"><li><span class="font-bold">01 </span> DESTINATION</li><div class=" group-hover:w-[131px] h-[2px] absolute top-[46px] bg-slate-500"></div></a>
+          <a href="/starter-code/crew.html" class="crew relative group"><li><span class="font-bold">02 </span> CREW</li><div class=" group-hover:w-[70px] h-[2px] absolute top-[46px] bg-slate-500"></div></a>
+          <a href="/starter-code/technology.html" class="technology relative group"><li><span class="font-bold">03 </span> TECHNOLOGY</li><div class=" group-hover:w-[150px] h-[2px] absolute top-[46px] bg-slate-500"></div></a>
+        </ul>
+  </nav>
+
+  <main class="flex flex-row justify-evenly w-[90%] h-[500px] mt-[100px]  mx-auto max-[864px]:flex-col max-[864px]:h-auto max-[864px]:items-center max-[864px]:text-center">
+    <div class="w-[50%] flex flex-col justify-evenly max-[864px]:w-[80%]  max-[596px]:w-full">
+      <h1 class="text-white font-bold text-[2rem] mb-[50px] max-[864px]:mb-[100px] max-[596px]:mb-[200px]"><span class="text-gray-500 font-bold text-[2rem]">03</span> SPACE LAUNCH 101</h1></h1>
+      <div class="all flex flex-row justify-between h-[300px] max-[864px]:flex-col-reverse">
+        <div class="flex flex-col justify-between mr-[20px] max-[864px]:flex-row">
+          <div class="one w-[90px] h-[90px] rounded-[50%] text-center pt-[15px] text-[2rem] border-white border-[1px]  cursor-pointer bg-white text-black">1</div>
+          <div class="two w-[90px] h-[90px] rounded-[50%] text-center  pt-[15px] text-[2rem] border-white border-[1px] cursor-pointer text-white hover:bg-white hover:text-black">2</div>
+          <div class="three w-[90px] h-[90px] rounded-[50%] text-center pt-[15px] text-[2rem] border-white border-[1px] cursor-pointer text-white hover:bg-white hover:text-black">3</div>
+        </div>
+   
+        <div class="info flex flex-col justify-evenly">
+          <h1 class=" header1 text-gray-500 text-[1.2rem] font-medium">THE TERMINOLOGY ...</h1>
+          <h1 class=" subheader2 text-white text-[3rem]">LAUNCH VEHICLE</h1>
+          <p class="text-gray-500 text-[1.2rem] font-medium">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
+        </div>
+      </div>
+      
+    </div>
+    <img src="/starter-code/assets/technology/image-launch-vehicle-portrait.jpg" alt="" class="w-[50%] max-[864px]:bg-[url('/starter-code/assets/technology/background-technology-tablet.jpg')] max-[864px]:w-full ">
+  </main>
+  <script src="technology.js"></script>
+</body>
+</html>

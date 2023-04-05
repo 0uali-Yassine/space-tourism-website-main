@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&display=swap" rel="stylesheet">
+  <title>Space tourism website</title>
+  <style>
+    @layer components{
+      .font_family{
+        font-family: 'IBM Plex Serif', serif;
+      }
+    }
+  </style>
+  
+</head>
+<body class="bg-[url('/starter-code/assets/home/background-home-desktop.jpg')] bg-no-repeat bg-cover h-[657px] w-[100%] max-[926px]:bg-[url('/starter-code/assets/home/background-home-tablet.jpg')] max-[926px]:bg-repeat max-[926px]:bg-cover max-[455px]:bg-[url('/starter-code/assets/home/background-home-mobile.jpg')]">
+
+  <nav class="flex justify-between w-[90%] m-auto  pt-[40px] relative font_family">
+    <a href="/starter-code/Home.html"><div class="logo bg-[url('/starter-code/assets/shared/logo.svg')] bg-no-repeat bg-cover w-[40px] h-[40px] mt-[20px]"></div></a>
+    <div class="line w-[400px] h-[1px] bg-slate-400  absolute top-[80px] left-[130px] max-[926px]:hidden"></div>
+
+    <ul class="flex justify-evenly w-[700px] h-[70px] text-[1.1rem] text-white items-center  bg-[#ffffff04] backdrop-blur-[10px] max-[926px]:hidden">
+      <a href="/starter-code//Home.html" class="home relative group underline decoration-2 underline-offset-[27px]"><li><span class="font-bold">00 </span>Home</li><div class="transition duration-100 ease-in-out delay-150 group-hover:w-[70px] h-[2px] absolute top-[46px] bg-slate-500"></div></a>
+      <a href="/starter-code/Destination.html" class="destination relative group"><li><span class="font-bold">01 </span> DESTINATION</li><div class="transition duration-300 ease-in-out delay-150 group-hover:w-[131px] h-[2px] absolute top-[46px] bg-slate-500"></div></a>
+      <a href="/starter-code/crew.html" class="crew relative group"><li><span class="font-bold">02 </span> CREW</li><div class="transition duration-300 ease-in-out delay-150 group-hover:w-[70px] h-[2px] absolute top-[46px] bg-slate-500"></div></a>
+      <a href="/starter-code/technology.html" class="technology relative group"><li><span class="font-bold">03 </span> TECHNOLOGY</li><div class="transition duration-300 ease-in-out delay-150 group-hover:w-[150px] h-[2px] absolute top-[46px] bg-slate-500"></div></a>
+    </ul>
+    <div class="burger absolute right-1  z-10 bg-[url('/starter-code/assets/shared/icon-hamburger.svg')] bg-no-repeat bg-cover cursor-pointer w-[30px] h-[30px] hidden max-[926px]:block"></div>
+    <div class="close bg-[url('/starter-code/assets/shared/icon-close.svg')] bg-no-repeat bg-cover w-[30px] h-[30px] hidden"></div>
+        
+        <ul class="list hidden  flex-col justify-evenly absolute right-0 w-[80%] h-[300px] text-[1.1rem] text-white items-center  bg-[#ffffff04] backdrop-blur-[10px] ">
+          <a href="/starter-code//Home.html" class="home relative group underline decoration-2 underline-offset-[27px]"><li><span class="font-bold">00 </span>Home</li><div class=" group-hover:w-[70px] h-[2px] absolute top-[46px] bg-slate-500"></div></a>
+          <a href="/starter-code/Destination.html" class="destination relative group"><li><span class="font-bold">01 </span> DESTINATION</li><div class=" group-hover:w-[131px] h-[2px] absolute top-[46px] bg-slate-500"></div></a>
+          <a href="/starter-code/crew.html" class="crew relative group"><li><span class="font-bold">02 </span> CREW</li><div class=" group-hover:w-[70px] h-[2px] absolute top-[46px] bg-slate-500"></div></a>
+          <a href="/starter-code/technology.html" class="technology relative group"><li><span class="font-bold">03 </span> TECHNOLOGY</li><div class=" group-hover:w-[150px] h-[2px] absolute top-[46px] bg-slate-500"></div></a>
+        </ul>
+  </nav>
+  <header class="flex flex-row justify-evenly w-[90%] mx-auto my-[100px] max-[804px]:flex-col max-[804px]:items-center max-[804px]:text-center max-[552px]:w-full">
+    <div class="flex flex-col justify-evenly w-[60%] ">
+
+      <h2 class="text-gray-500 font-medium text-[2.4rem]">So, you want to travel to</h2>
+      <h1 class="text-white font-medium text-[8rem] font_family max-[552px]:text-[5rem]">SPACE</h1>
+      <p class="text-gray-500 font-normal text-[1.5rem]"> Let’s face it; if you want to go to space, you might as well genuinely go to 
+        outer space and not hover kind of on the edge of it. Well sit back, and relax 
+        because we’ll give you a truly out of this world experience!</p>
+    </div>
+
+    <div class="Explore w-[270px] h-[270px] rounded-[50%] bg-white text-black text-center font_family font-medium pt-[100px] mt-[100px] text-[3rem] cursor-pointer ">Explore</div>
+  </header>
+<script src="home.js"></script>
+</body>
+</html>

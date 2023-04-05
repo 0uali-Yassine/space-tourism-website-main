@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&display=swap" rel="stylesheet">
+  <title>Space tourism website</title>
+  <style>
+    @layer components{
+      .font_family{
+        font-family: 'IBM Plex Serif', serif;
+      }
+    }
+  </style>
+</head>
+<body class="bg-[url('/starter-code/assets/crew/background-crew-desktop.jpg')] bg-no-repeat bg-cover h-[100%] w-[100%] select-none font_family max-[926px]:bg-[url('/starter-code/assets/crew/background-crew-tablet.jpg')] max-[455px]:bg-[url('/starter-code/assets/crew/background-crew-mobile.jpg')]">
+
+  <nav class="flex justify-between w-[90%] m-auto  pt-[40px] relative font_family">
+    <a href="/starter-code/Home.html"><div class="logo bg-[url('/starter-code/assets/shared/logo.svg')] bg-no-repeat bg-cover w-[40px] h-[40px] mt-[20px]"></div></a>
+    <div class="line w-[400px] h-[1px] bg-slate-400  absolute top-[80px] left-[130px] max-[651px]:hidden"></div>
+
+    <ul class="flex justify-evenly w-[700px] h-[70px] text-[1.1rem] text-white items-center  bg-[#ffffff04] backdrop-blur-[10px] max-[926px]:hidden">
+      <a href="/starter-code//Home.html" class="home relative group"><li><span class="font-bold">00 </span>Home</li><div class="transition duration-100 ease-in-out delay-150 group-hover:w-[70px] h-[2px] absolute top-[46px] bg-slate-500"></div></a>
+      <a href="/starter-code/Destination.html" class="destination relative group"><li><span class="font-bold">01 </span> DESTINATION</li><div class="transition duration-300 ease-in-out delay-150 group-hover:w-[131px] h-[2px] absolute top-[46px] bg-slate-500"></div></a>
+      <a href="/starter-code/crew.html" class="crew relative group underline decoration-2 underline-offset-[27px]"><li><span class="font-bold">02 </span> CREW</li><div class="transition duration-300 ease-in-out delay-150 group-hover:w-[70px] h-[2px] absolute top-[46px] bg-slate-500"></div></a>
+      <a href="/starter-code/technology.html" class="technology relative group"><li><span class="font-bold">03 </span> TECHNOLOGY</li><div class="transition duration-300 ease-in-out delay-150 group-hover:w-[150px] h-[2px] absolute top-[46px] bg-slate-500"></div></a>
+    </ul>
+    <div class="burger absolute right-1  z-10 bg-[url('/starter-code/assets/shared/icon-hamburger.svg')] bg-no-repeat bg-cover cursor-pointer w-[30px] h-[30px] hidden max-[926px]:block"></div>
+    <div class="close bg-[url('/starter-code/assets/shared/icon-close.svg')] bg-no-repeat bg-cover w-[30px] h-[30px] hidden"></div>
+        
+        <ul class="list hidden  flex-col justify-evenly absolute right-0 w-[80%] h-[300px] text-[1.1rem] text-white items-center  bg-[#ffffff04] backdrop-blur-[10px] ">
+          <a href="/starter-code//Home.html" class="home relative group underline decoration-2 underline-offset-[27px]"><li><span class="font-bold">00 </span>Home</li><div class=" group-hover:w-[70px] h-[2px] absolute top-[46px] bg-slate-500"></div></a>
+          <a href="/starter-code/Destination.html" class="destination relative group"><li><span class="font-bold">01 </span> DESTINATION</li><div class=" group-hover:w-[131px] h-[2px] absolute top-[46px] bg-slate-500"></div></a>
+          <a href="/starter-code/crew.html" class="crew relative group"><li><span class="font-bold">02 </span> CREW</li><div class=" group-hover:w-[70px] h-[2px] absolute top-[46px] bg-slate-500"></div></a>
+          <a href="/starter-code/technology.html" class="technology relative group"><li><span class="font-bold">03 </span> TECHNOLOGY</li><div class=" group-hover:w-[150px] h-[2px] absolute top-[46px] bg-slate-500"></div></a>
+        </ul>
+  </nav>
+
+  <main class="flex flex-row justify-around w-[90%] h-[550px]  m-auto mt-[20px] max-[651px]:flex-col max-[651px]:h-auto max-[651px]:items-center max-[651px]:text-center">
+
+    <div class="flex flex-col justify-evenly w-[400px]">
+      <div class=" flex flex-col justify-evenly">
+        <h1 class="text-white font-bold text-[2rem] mb-[50px]"><span class="text-gray-500 font-bold text-[2rem]">02</span> Meet your crew</h1>
+      </div>
+
+      <div>
+        <h1 class="h1 text-gray-500 text-[2rem]">COMMANDER</h1>
+        <h1 class="h2 text-white text-[3rem] font-medium">DOUGLAS <br> HURLEY</h1>
+        <p class="text-gray-400 text-[1.2rem]">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
+          and former NASA astronaut. He launched into space for the third time as 
+          commander of Crew Dragon Demo-2.</p>
+
+        <ul class="flex justify-between w-[200px] mt-[40px] max-[651px]:m-auto">
+          <li class="liste bg-gray-50 w-[15px] h-[15px] rounded-[50%] hover:bg-slate-400 cursor-pointer"></li>
+          <li class="liste bg-gray-50 w-[15px] h-[15px] rounded-[50%] hover:bg-slate-400 cursor-pointer"></li>
+          <li class="liste bg-gray-50 w-[15px] h-[15px] rounded-[50%] hover:bg-slate-400 cursor-pointer"></li>
+          <li class="liste bg-gray-50 w-[15px] h-[15px] rounded-[50%] hover:bg-slate-400 cursor-pointer"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="w-[400px] max-[455px]:w-full">
+      <img class="images" src="/starter-code/assets/crew/image-douglas-hurley.png"  alt="douglas-hurley">
+    </div>
+    
+  </main>
+
+ 
+ <script src="/starter-code/crew.js"></script>
+</body>
+</html>
